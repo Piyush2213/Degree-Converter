@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Converter</title>
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-shape"></div>
+        <div class="background-shape"></div>
+    </div>
+    <form>
+        <h3>Converter</h3>
+
+        <label for="inputValue">Input: </label>
+        <input type="number" placeholder="Enter number" id="inputValue">
+
+        <label for="inputDegree">Select input unit:</label>
+        <select name="inputDegree" id="inputDegree">
+            <option value="Celsius">Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+        </select>
+
+        <label for="outputDegree">Select output unit:</label>
+        <select name="outputDegree" id="outputDegree">
+            <option value="Celsius">Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+        </select>
+        <p id="result"></p>
+        <button>Convert</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
